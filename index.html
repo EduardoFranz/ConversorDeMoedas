@@ -8,21 +8,27 @@
     <script src="./script.js"></script>
     <title>Conversor de Moedas</title>
   </head>
-  <body>
+  <body class="gradient">
     <div class="container">
       <h1 class="page-title">Conversor de Moedas</h1>
-      <p class="sub-title">Descubra o valor em Real R$</p>
+      <p class="sub-title">Converter Real(R$) para Dólar e Euro</p>
       <img
         src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
         class="aluraLogoPage"
         alt="alura logo"
       /><br /><br />
-      <label for="moeda">Insira o valor em dolar U$</label><br />
-      <input type="number" id="valor" size="2" /><br />
+      <label for="moeda">Qual valor deseja converter?</label><br />
+      <input
+        type="number"
+        id="valor"
+        size="2"
+        placeholder="Digite aqui"
+      /><br />
       <button type="submit" onclick="Converter()">Converter</button>
-      <h2 id="valorConvertido"></h2>
+      <h2 id="valorConvertidoEmDolar"></h2>
+      <h2 id="valorConvertidoEmEuro"></h2>
 
-      <div id="valorConvertido"></div>
+      <!-- <div id="valorConvertido"></div> -->
     </div>
     <a href="http://alura.com.br/" target="_blank">
       <img
